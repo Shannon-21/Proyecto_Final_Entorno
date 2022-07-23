@@ -33,7 +33,8 @@ Ahora debe ejecutar el comando siguiente para correr la aplicacion dentro de un 
 
 Este comando debe mostrar una salida como la siguiente:
 
-```Que archivo de texto desea analizar?: prueba.txt
+```
+Que archivo de texto desea analizar?: prueba.txt
 Con que script desea analizar el archivo prueba.txt?
 1) Salir	      3) statsUsageWords    5) statsSentences
 2) statsWords	      4) findNames	    6) blankLinesCounter
