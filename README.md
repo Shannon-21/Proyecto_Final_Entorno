@@ -12,24 +12,25 @@ se debe clonar este repositorio en el equipo host del usuario, desde la terminal
 
 ```git clone https://github.com/Shannon-21/Proyecto_Final_Entorno.git```
 
-Luego acceder con su nombre de usuario de Github y el token otorgado
+Luego acceder con su nombre de usuario de Github y clave
 
-Situarse en el nuevo directorio en su equipo host, y ejecute el comando ```ls -la``` para verificar que los archivos de este repositorio han sido copiados en su equipo
+Situarse en el nuevo directorio en su equipo host, y ejecute el comando ```ll``` para verificar que los archivos de este repositorio han sido copiados en su equipo
 
 ### Docker
 Antes de iniciar debe asegurarse de que dokerd este activo. Puede activarlo con el comando ```sudo systemctl start docker```
 
 Ahora debe contruir una imagen a partir del archivo *Dockerfile* usando el comando siguiente:
 
-```docker build -t <image_name>:<version> .```
+```docker build -t <image_name> .```
 
-Ejemplo: ``` docker build -t text_analysis:1.0 .```
+Ejemplo: ``` docker build -t text_analysis .```
+
 Asegurese de ejecutar el comando estando situado sobre el directorio ```Proyecto_Final_Entorno```
 
 ### Ejecución
 Ahora debe ejecutar el comando siguiente para correr la aplicacion dentro de un contenedor:
 
-```docker run -it <image_name>:<version>```
+```docker run -it <image_name>```
 
 Este comando debe mostrar una salida como la siguiente:
 
